@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 
+
 try:
     import sys
     import os
-
     ProjectConfirmed = False
 
     while ProjectConfirmed == False:
