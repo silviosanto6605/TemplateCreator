@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 
+
 try:
     import sys
     import os
-
     ProjectConfirmed = False
 
     while ProjectConfirmed == False:
@@ -40,3 +40,8 @@ try:
 
 except KeyboardInterrupt:
     print("Have a good day... See you soon :) ")
+<<<<<<< HEAD
+=======
+
+#test branch
+>>>>>>> test
