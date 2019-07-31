@@ -55,6 +55,9 @@ try:
                     indexcss = open("MyNpmProject/css/index.css","w+")
                     indexcss.writelines('body{\nbackground-color:lightgoldenrodyellow;\n}\nh1{\nfont-family: Courier;\ncolor: blue\n}\n')
                     os.system("cd MyNpmProject && npm init")
+                    os.system("cd MyNpmProject && touch main.js")
+                    mainjs = open("main.js","w+")
+                    mainjs.writelines("const {app, BrowserWindow} = require('electron')\nconst path = require('path')\nlet mainWindow\nfunction createWindow () {\nmainWindow = new BrowserWindow({\nwidth: 800,\nheight: 600,\nwebPreferences: {\n})\nmainWindow.loadFile('index.html')\nmainWindow.on('closed', function () {\nmainWindow = null\n})\n}\napp.on('ready', createWindow)\napp.on('window-all-closed', function () {\nif (process.platform !== 'darwin') app.quit()\n})\napp.on('activate', function () {\nif (mainWindow === null) createWindow()\n})")
                     ProjectConfirmed = True
                     print("Template created. Exiting...")
                     sys.exit()
