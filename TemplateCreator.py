@@ -41,7 +41,7 @@ try:
             else:
                 NewProject = input("Please, retype your answer. Press enter then retype ")
 
-        if TypeOfProject == 2: #Electron project 
+        #if TypeOfProject == 2: #Electron project 
             
         #To do:
         # Create html default template     --------
