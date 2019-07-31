@@ -40,8 +40,3 @@ try:
 
 except KeyboardInterrupt:
     print("Have a good day... See you soon :) ")
-<<<<<<< HEAD
-=======
-
-#test branch
->>>>>>> test
