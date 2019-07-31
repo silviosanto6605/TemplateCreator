@@ -48,6 +48,8 @@ try:
         # Add main.js                             | ====> Possibile fix: run os.system("npm init") //Require Electron, npm and node.js
         # Add package.json                 --------        
 
+
+
 except KeyboardInterrupt:
     print("Have a good day... See you soon :) ")
 
