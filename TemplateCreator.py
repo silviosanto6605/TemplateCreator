@@ -89,6 +89,5 @@ try:
 except KeyboardInterrupt:
     print("     Terminating.. Have a good day. See you soon :) ")
 
-#test branch
-#UNSTABLE BRANCH: everything here is not stable: use this code at your own risk. 
+#test branch 
 #Silvio Santoriello (C) 2019
