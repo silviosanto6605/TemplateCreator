@@ -8,10 +8,10 @@ try:
     TypeOfFile = None
 
     while ProjectConfirmed == False:
-        
+
         TypeOfProject = input("Insert the type of project you want to create: 1) HTML, 2) Electron ")
-        if TypeOfProject == '1': #html
-            NewHTMLProject = input("Please type 'create ' to create a default template for HTML/CSS/JS project, type delete to delete it...   ")      
+        if TypeOfProject == '1': 
+            NewHTMLProject = input("Please type 'create ' to create a default template for HTML/CSS/JS project, type delete to delete it...   ")
             if NewHTMLProject == "create":
                 if not os.path.exists("HTMLProject"):
                     os.system("mkdir HTMLProject && cd HTMLProject && touch index.html && mkdir css img js ")
@@ -45,8 +45,8 @@ try:
 #================================================================================================
 #Electron
 
-        if TypeOfProject == '2': 
-            NewElectronProject = input("Please type 'create ' to create a default template for Electron project, type delete to delete it...   ")      
+        if TypeOfProject == '2':
+            NewElectronProject = input("Please type 'create ' to create a default template for Electron project, type delete to delete it...   ")
             if NewElectronProject == "create":
                 if not os.path.exists("MyElectronProject"):
                     os.system("mkdir MyElectronProject && cd MyElectronProject && touch index.html && mkdir css img js ")
@@ -86,8 +86,10 @@ try:
 
 
 
+
+
 except KeyboardInterrupt:
     print("     Terminating.. Have a good day. See you soon :) ")
 
-#test branch 
+#test branch
 #Silvio Santoriello (C) 2019
