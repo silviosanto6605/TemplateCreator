@@ -57,7 +57,7 @@ try:
                     #Replaced ==>     os.system("cd MyElectronProject && Electron init")
                     os.system("cd MyElectronProject && touch package.json ")
                     packagejson = open("MyElectronProject/package.json","w+")
-                    packagejson.writelines('{\n"name": "myElectronproject",\n"version": "1.0.0",\n"description": "",\n"main": "index.js",\n"scripts": {\n\t"start" : "electron ."\n},\n"author": "",\n"license": "ISC"\n}')
+                    packagejson.writelines('{\n"name": "myElectronproject",\n"version": "1.0.0",\n"description": "",\n"main": "index.js",\n"scripts": {\n\t"start" : "electron ."\n},\n"author": "Silvio Santoriello",\n"license": ""\n}')
                     os.system("cd MyElectronProject && touch index.js")
                     indexjs = open("MyElectronProject/index.js","w+")
                     indexjs.writelines("const { app, BrowserWindow } = require('electron')\nfunction createWindow () {\nlet win = new BrowserWindow({\nwidth: 800,\nheight: 600,\nwebPreferences: {\nnodeIntegration: true\n}\n})\nwin.loadFile('index.html')\n}\napp.on('ready', createWindow)")
