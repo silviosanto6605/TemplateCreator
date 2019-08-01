@@ -24,14 +24,14 @@ try:
                     sys.exit()
 
                 else:
-                    deleteconf= input("You have another folder with this name. If you type yes, you are going to detroy the actual folder. To abort press ctrl+c Continue? ")
+                    deleteconf=input("You have another folder with this name. If you type yes, you are going to detroy the actual folder. To abort press ctrl+c Continue? ")
                     if deleteconf == "yes":
                         os.system("rm -rf HTMLProject")
                         sys.exit(0)
 
 
-            if NewHTMLProject == "delete":
-                ProjectConfirmed == True
+            if NewHTMLProject=="delete":
+                ProjectConfirmed==True
                 os.system("rm -rf HTMLProject")
                 print("Project deleted!")
                 sys.exit(0)
