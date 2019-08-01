@@ -8,6 +8,7 @@ try:
     TypeOfFile = None
 
     while ProjectConfirmed == False:
+<<<<<<< HEAD
         
         TypeOfProject = input("Insert the type of project you want to create: 1) HTML, 2) Electron ")
         if TypeOfProject == '1': #html
@@ -38,6 +39,16 @@ try:
 
 
 
+=======
+        NewProject = input("Please type 'create ' to create a default template for HTML/CSS/JS project, type delete to delete it...   ")
+
+        if NewProject == "create":
+            if not os.path.exists("Project1"):
+                os.system("mkdir Project1 && cd Project1 && touch index.html && mkdir css img js ")
+                ProjectConfirmed = True
+                print("Template created. Exiting...")
+                sys.exit()
+>>>>>>> parent of 7befeab... create index.html and index.css
             else:
                 NewHTMLProject = input("Please, retype your answer. Press enter then retype ")
 
