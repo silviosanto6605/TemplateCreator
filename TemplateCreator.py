@@ -9,7 +9,7 @@ try:
 
     while ProjectConfirmed == False:
         
-        TypeOfProject = input("Insert the type of project you want to create: 1) HTML, 2) Cordova/Phonegap or 3) Electron   ")
+        TypeOfProject = input("Insert the type of project you want to create: 1) HTML, 2) Electron ")
         if TypeOfProject == '1': #html
             NewHTMLProject = input("Please type 'create ' to create a default template for HTML/CSS/JS project, type delete to delete it...   ")      
             if NewHTMLProject == "create":
@@ -45,7 +45,7 @@ try:
 #================================================================================================
 #Electron
 
-        if TypeOfProject == '3': 
+        if TypeOfProject == '2': 
             NewElectronProject = input("Please type 'create ' to create a default template for Electron project, type delete to delete it...   ")      
             if NewElectronProject == "create":
                 if not os.path.exists("MyElectronProject"):
