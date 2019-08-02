@@ -10,7 +10,7 @@ try:
     while ProjectConfirmed == False:
 
         TypeOfProject = input("Insert the type of project you want to create: 1) HTML, 2) Electron ")
-        if TypeOfProject == '1': 
+        if TypeOfProject == '1':
             NewHTMLProject = input("Please type 'create ' to create a default template for HTML/CSS/JS project, type delete to delete it...   ")
             if NewHTMLProject == "create":
                 if not os.path.exists("HTMLProject"):
@@ -71,7 +71,6 @@ try:
                         os.system("rm -rf MyElectronProject")
                         sys.exit(0)
 
-
             if NewElectronProject == "delete":
                 ProjectConfirmed == True
                 os.system("rm -rf MyElectronProject")
@@ -79,11 +78,11 @@ try:
                 sys.exit(0)
 
 
-
             else:
                 NewElectronProject = input("Please, retype your answer. Press enter then retype ")
 
 
+        #if TypeOfProject == "3": #phonegap
 
 
 
