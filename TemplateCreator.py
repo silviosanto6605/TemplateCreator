@@ -6,7 +6,7 @@ try:
     import os
     import shutil
 
-    ProjectConfirmed = False
+    ProjectConfirmed: bool = False
     TypeOfFile = None
 
     while ProjectConfirmed == False:
