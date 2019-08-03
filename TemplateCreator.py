@@ -82,7 +82,6 @@ try:
                 NewElectronProject = input("Please, retype your answer. Press enter then retype ")
 
 
-        #if TypeOfProject == "3": #phonegap
 
 
 
