@@ -87,7 +87,6 @@ try:
 
 
 except KeyboardInterrupt:
-    print("     Terminating.. Have a good day. See you soon :) ")
+    print("See you soon... Bye! :)")
 
-#test branch
 #Silvio Santoriello (C) 2019
