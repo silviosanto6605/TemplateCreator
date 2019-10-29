@@ -6,15 +6,15 @@ try:
     import os
     import shutil
 
-    ProjectConfirmed: bool = False
+    ProjectConfirmed = False
     TypeOfFile = None
 
     while ProjectConfirmed == False:
 
-        TypeOfProject = input("Insert the type of project you want to create: 1) HTML, 2) Electron ")
+        TypeOfProject = str(input("Insert the type of project you want to create: 1) HTML, 2) Electron "))
         if TypeOfProject == '1':
-            NewHTMLProject = input("Please type 'create ' to create a default template for HTML/CSS/JS project, type delete to delete it...   ")
-            if NewHTMLProject == "create":
+            NewHTMLProject = str(input("Please type 'create ' to create a default template for HTML/CSS/JS project, type delete to delete it...   "))
+            if NewHTMLProject == 'create':
                 if not os.path.exists("HTMLProject"):
                     os.system("mkdir HTMLProject && cd HTMLProject && touch index.html && mkdir css img js ")
                     indexhtml = open("HTMLProject/index.html", "w+")
@@ -26,13 +26,13 @@ try:
                     sys.exit()
 
                 else:
-                    deleteconf=input("You have another folder with this name. If you type yes, you are going to detroy the actual folder. To abort press ctrl+c Continue? ")
-                    if deleteconf == "yes":
+                    deleteconf=str(input("You have another folder with this name. If you type yes, you are going to detroy the actual folder. To abort press ctrl+c Continue? "))
+                    if deleteconf == 'yes':
                         shutil.rmtree("HTMLProject")
                         sys.exit(0)
 
 
-            if NewHTMLProject=="delete":
+            if NewHTMLProject=='delete':
                 ProjectConfirmed==True
                 shutil.rmtree("HTMLProject")
                 print("Project deleted!")
@@ -48,7 +48,7 @@ try:
 #Electron
 
         if TypeOfProject == '2':
-            NewElectronProject = input("Please type 'create ' to create a default template for Electron project, type delete to delete it...   ")
+            NewElectronProject = str(input("Please type 'create ' to create a default template for Electron project, type delete to delete it...   "))
             if NewElectronProject == "create":
                 if not os.path.exists("MyElectronProject"):
                     os.system("mkdir MyElectronProject && cd MyElectronProject && mkdir css img js ")
@@ -66,12 +66,12 @@ try:
                     sys.exit()
 
                 else:
-                    deleteconf= input("You have another folder with this name. If you type yes, you are going to detroy the actual folder. To abort press ctrl+c Continue? ")
-                    if deleteconf == "yes":
+                    deleteconf= str(input("You have another folder with this name. If you type yes, you are going to detroy the actual folder. To abort press ctrl+c Continue? "))
+                    if deleteconf == 'yes':
                         shutil.rmtree("MyElectronProject")
                         sys.exit(0)
 
-            if NewElectronProject == "delete":
+            if NewElectronProject == 'delete':
                 ProjectConfirmed == True
                 shutil.rmtree("MyElectronProject")
                 print("Project deleted!")
